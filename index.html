@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./normalize.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <title>Арина Позднякова - визитка</title>
+    <style>
+      /* Основные стили */
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+        font-family: "Times New Roman", serif; /* Изменён шрифт на Times New Roman */
+        background-color: #f8f9fa;
+      }
+
+      /* Шрифт Times New Roman для всех текстовых элементов */
+      .links__header,
+      .links__title,
+      .links__link a,
+      .header__title {
+        font-family: "Times New Roman", serif; /* Единый шрифт для всего документа */
+      }
+
+      /* Уменьшаем размер шрифта для таблиц "Контакты" и "Увлечения" */
+      .links__title {
+        font-size: 1.2rem; /* Уменьшенный размер */
+        font-weight: 600;
+      }
+
+      .links__link a {
+        font-size: 1rem; /* Уменьшенный размер */
+      }
+
+      /* Остальные стили */
+      .header {
+        text-align: center;
+        padding: 1rem 0 0.5rem 0;
+      }
+      .header__title {
+        margin: 0.5rem 0;
+        font-size: 2.2rem;
+      }
+      .header__avatar {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 3px solid #f0f0f0;
+      }
+      main {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 0.5rem 0;
+      }
+      .links {
+        margin: 0.5rem auto;
+        width: 90%;
+        max-width: 800px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+        padding: 2.5rem;
+        box-sizing: border-box;
+      }
+      .links__header {
+        text-align: center;
+        margin: 0 0 1.8rem 0;
+        font-size: 1.8rem;
+        color: #333;
+      }
+      .links__container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .links__link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 1.2rem 0;
+        width: 100%;
+        max-width: 700px;
+        list-style-type: none;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+      }
+      .links__link:last-child {
+        border-bottom: none;
+      }
+      .links__link a {
+        display: block;
+        margin: 0;
+        padding: 0 1rem;
+        text-decoration: none;
+        color: #0066cc;
+        transition: color 0.2s;
+        word-break: break-word;
+        text-align: center;
+      }
+      .links__link a:hover {
+        color: #004499;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <img src="./avatar.JPG" alt="Аватар Арины Поздняковой" class="header__avatar" />
+      <h1 class="header__title">Арина Позднякова</h1>
+    </header>
+    <main>
+      <section class="links">
+        <h2 class="links__header">Контакты</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Телеграм</p>
+            <a class="links__link" href="https://t.me/rinaalekx" target="_blank" rel="noopener noreferrer">@rinaalekx</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Эл. почта</p>
+            <a class="links__link" href="mailto:arinaaleks25@gmail.com">arinaaleks25@gmail.com</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">GitHub</p>
+            <a class="links__link" href="https://github.com/rinaalekx/" target="_blank" rel="noopener noreferrer">github.com/rinaalekx/</a>
+          </li>
+        </ul>
+      </section>
+      <section class="links">
+        <h2 class="links__header">Увлечения</h2>
+        <ul class="links__container">
+          <li class="links__link">
+            <p class="links__title">Активный отдых</p>
+            <a class="links__link" href="https://taplink.cc/letotour.vl/" target="_blank" rel="noopener noreferrer">Туры по Приморью</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Музыка</p>
+            <a class="links__link" href="https://grimestone.bandcamp.com/album/curtan-wall-yr-gwyddbwyll" target="_blank" rel="noopener noreferrer">Любимый альбом</a>
+          </li>
+          <li class="links__link">
+            <p class="links__title">Искусство</p>
+            <a class="links__link" href="https://rusmuseumvrm.ru/collections/painting/index.php" target="_blank" rel="noopener noreferrer">Живопись XVII века</a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script type="text/javascript" src="js.js"></script>
+  </body>
+</html>
