@@ -8,35 +8,36 @@
     <link href="./style.css" rel="stylesheet" />
     <title>Арина Позднякова - визитка</title>
     <style>
-      /* Основные стили */
+      /* Добавленные стили для подзаголовка */
+      .header__subtitle {
+        text-align: center;
+        margin: 0.5rem 0;
+        font-size: 1.5rem;
+        color: #444;
+      }
+
+      /* Остальные стили остаются без изменений */
       body {
         display: flex;
         flex-direction: column;
         min-height: 100vh;
         margin: 0;
-        font-family: "Times New Roman", serif; /* Изменён шрифт на Times New Roman */
+        font-family: "Times New Roman", serif;
         background-color: #f8f9fa;
       }
-
-      /* Шрифт Times New Roman для всех текстовых элементов */
       .links__header,
       .links__title,
       .links__link a,
       .header__title {
-        font-family: "Times New Roman", serif; /* Единый шрифт для всего документа */
+        font-family: "Times New Roman", serif;
       }
-
-      /* Уменьшаем размер шрифта для таблиц "Контакты" и "Увлечения" */
       .links__title {
-        font-size: 1.2rem; /* Уменьшенный размер */
+        font-size: 1.2rem;
         font-weight: 600;
       }
-
       .links__link a {
-        font-size: 1rem; /* Уменьшенный размер */
+        font-size: 1rem;
       }
-
-      /* Остальные стили */
       .header {
         text-align: center;
         padding: 1rem 0 0.5rem 0;
@@ -118,8 +119,10 @@
     <header class="header">
       <img src="./avatar.jpg" alt="Аватар Арины Поздняковой" class="header__avatar" />
       <h1 class="header__title">Арина Позднякова</h1>
+      <p class="header__subtitle">QA Engineer</p> <!-- Добавленный параграф -->
     </header>
     <main>
+      <!-- Остальное содержимое без изменений -->
       <section class="links">
         <h2 class="links__header">Контакты</h2>
         <ul class="links__container">
